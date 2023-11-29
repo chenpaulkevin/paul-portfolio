@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: theme("colors.secondary");
+}
+.svg-goo {
+  display: none;
+}
+.gradients-container {
+  filter: url(#goo) blur(40px);
+  width: 100%;
+  height: 100%;
+}
+.clips {
+  box-shadow: -15px 15px 0px theme("colors.secondary");
+}
+.slider p {
+  margin: 0px;
+  transform: translateZ(0);
+}
+
+.slider p:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  transform: translateZ(0);
+}
+.bar-1,
+.bar-2,
+.bar-3 {
+  width: 1.5rem;
+  height: 0.15rem;
+  background-color: theme("colors.primary");
+  margin: 0.2rem 0;
+  border-radius: 15%;
+  transition: 0.4s;
+}
+@keyframes closeIcon {
+  0% {
+  }
+  50% {
+    transform: translate(0, 0.55rem);
+  }
+  100% {
+    transform: translate(0, 0.55rem) rotate(45deg);
+  }
+}
+@keyframes closeIconReverse {
+  0% {
+    transform: translate(0, 0.55rem) rotate(45deg);
+  }
+  50% {
+    transform: translate(0, 0.55rem);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes closeBottomIcon {
+  0% {
+  }
+  50% {
+    transform: translate(0, -0.55rem);
+  }
+  100% {
+    transform: translate(0, -0.55rem) rotate(-45deg);
+  }
+}
+@keyframes closeBottomIconReverse {
+  0% {
+    transform: translate(0, -0.55rem) rotate(-45deg);
+  }
+  50% {
+    transform: translate(0, -0.55rem);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.open .bar-1 {
+  background-color: theme("colors.secondary");
+  animation: closeIcon 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: 1; /* Set it to 1 to stop the animation at 100% */
+  animation-fill-mode: forwards;
+}
+.close .bar-1 {
+  background-color: theme("colors.primary");
+  transition-delay: 0.6s;
+  transition-property: background-color;
+  animation: closeIconReverse 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: 1; /* Set it to 1 to stop the animation at 100% */
+  animation-fill-mode: forwards;
+}
+
+.open .bar-2 {
+  background-color: theme("colors.secondary") !important;
+  opacity: 0;
+}
+.close .bar-2 {
+  background-color: theme("colors.primary") !important;
+  transition-delay: 0.6s;
+  transition-property: background-color;
+}
+
+.open .bar-3 {
+  background-color: theme("colors.secondary");
+  animation: closeBottomIcon 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: 1; /* Set it to 1 to stop the animation at 100% */
+  animation-fill-mode: forwards;
+}
+.close .bar-3 {
+  background-color: theme("colors.primary");
+  transition-delay: 0.6s;
+  transition-property: background-color;
+  animation: closeBottomIconReverse 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: 1; /* Set it to 1 to stop the animation at 100% */
+  animation-fill-mode: forwards;
+}
+.open {
+  border-color: theme("colors.secondary") !important;
+  background-color: none !important;
+  transition: 0.4s;
+}
+.close {
+  background-color: theme("colors.secondary") !important;
+  transition-delay: 0.6s !important;
+  transition: 0.4s;
+}
+.menu {
+  background: rgba(229, 230, 235, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.link-value {
+  transition: all 0.35s;
+}
+.link-value:hover {
+  transform: translateX(0.5rem) !important;
+}
