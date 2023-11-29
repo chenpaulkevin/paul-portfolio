@@ -23,7 +23,7 @@ const spinAnimation = {
 
 function Header() {
   return (
-    <>
+    <section>
       <div className="container mx-auto pt-8 h-[calc(100dvh-7rem)] pb-8">
         <div className="hero flex flex-col gap-8 h-full">
           <div>
@@ -53,6 +53,8 @@ function Header() {
                     alt="learn more image"
                     fill
                     quality={100}
+                    sizes="100%"
+                    priority
                     style={{ objectFit: "cover" }}
                   ></Image>
                 </motion.div>
@@ -65,7 +67,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 
