@@ -140,6 +140,28 @@ body {
 .link-value:hover {
   transform: translateX(0.5rem) !important;
 }
-.spline-watermark {
-  display: none !important;
+.door {
+  box-shadow: 0px 0px 20px 0px #e5e6ebb9;
+}
+.door-light {
+  background-image: conic-gradient(
+    from 90deg at 66.5% 0%,
+    #e5e6eb,
+    #e5e6eb8c,
+    #1e212400,
+    #1e212400,
+    #1e212400,
+    #1e212400
+  );
+}
+.door-light-2 {
+  background-image: conic-gradient(
+    from -90deg at 33.5% 0%,
+    #1e212400,
+    #1e212400,
+    #1e212400,
+    #1e212400,
+    #e5e6eb8c,
+    #e5e6eb
+  );
 }
