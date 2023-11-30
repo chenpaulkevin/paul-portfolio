@@ -60,6 +60,21 @@ const descriptionVariants = {
     },
   },
 };
+const buttonVariant = {
+  initial: {
+    x: "-280%",
+    rotate: -135,
+  },
+  enter: {
+    x: 0,
+    rotate: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+      ease: easeInOut,
+    },
+  },
+};
 
 const sectionStyles =
   "h-screen w-full relative bg-secondary items-center sticky top-0";
@@ -186,11 +201,24 @@ const WorkItem = ({
             </motion.div>
           </div>
           <Link className="place-self-end" href={href} target="_blank">
-            <div className="py-2 pr-2 pl-4 w-fit rounded-full border-2 border-primary flex items-center text-primary text-xl gap-4 mr-4">
-              <div>Visit Website</div>
-              <div className="h-12 w-12 rounded-full bg-primary justify-center items-center text-secondary flex text-4xl">
+            <div className="py-2 pr-2 pl-4 w-fit rounded-full border-2 border-primary flex items-center text-primary text-xl gap-2 mr-4">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { delay: 0.7, duration: 0.2, ease: easeInOut },
+                }}
+              >
+                Visit Website
+              </motion.div>
+              <motion.div
+                variants={buttonVariant}
+                initial="initial"
+                whileInView="enter"
+                className="h-12 w-12 rounded-full bg-primary justify-center items-center text-secondary flex text-4xl"
+              >
                 &#8599;
-              </div>
+              </motion.div>
             </div>
           </Link>
         </div>

@@ -4,6 +4,7 @@ import NavigationBar from "./components/navbar/NavigationBar";
 import Header from "./components/homepage/header/Header";
 import PreviousWorks from "./components/homepage/works/PreviousWorks";
 import BrandGrid from "./components/homepage/brands/BrandGrid";
+import Camera from "./components/homepage/three-d/Camera";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <PreviousWorks />
       <BrandGrid />
+      <Camera></Camera>
     </main>
   );
 }
