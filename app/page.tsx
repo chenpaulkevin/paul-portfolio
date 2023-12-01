@@ -6,6 +6,7 @@ import PreviousWorks from "./components/homepage/works/PreviousWorks";
 import BrandGrid from "./components/homepage/brands/BrandGrid";
 import Camera from "./components/homepage/three-d/Camera";
 import Door from "./components/homepage/door/Door";
+import Footer from "./components/homepage/footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <BrandGrid />
       <Camera></Camera>
       <Door></Door>
+      <Footer></Footer>
     </main>
   );
 }
