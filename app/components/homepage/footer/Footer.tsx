@@ -17,7 +17,7 @@ function Footer() {
                 <p>Let&apos;s</p>
                 <p>Connect</p>
               </h1>{" "}
-              <div className="flex gap-4">
+              <div className="flex gap-2 md:gap-4 items-center">
                 <h1 className="font-semibold text-2xl lg:text-5xl">
                   <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
                     chenpaulkevin@gmail.com
@@ -25,8 +25,7 @@ function Footer() {
                 </h1>
                 <div className="relative flex justify-center items-center">
                   <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
-                    <div className="h-10 w-10 rounded-full bg-secondary absolute animate-ping opacity-[30%]"></div>
-                    <div className="h-12 w-12 rounded-full bg-secondary justify-center items-center text-primary flex text-2xl">
+                    <div className="h-12 w-12 md:h-12 md:w-12 rounded-full md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
                       &#8599;
                     </div>
                   </Link>
@@ -34,8 +33,10 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="h-24 w-full text-secondary text-base md:text-lg lg:text-xl flex justify-between items-center mt-10">
-            <div>Currently in Manila (GMT+8)</div>
+          <div className="h-24 w-full text-secondary text-base md:text-lg lg:text-xl flex flex-wrap justify-between items-center mt-10">
+            <div className="w-full text-center font-bold lg:w-auto lg:text-start lg: font-normal">
+              Currently in Manila (GMT+8)
+            </div>
             <div>
               <Link
                 href="https://www.linkedin.com/in/paul-kevin-chen-a74979188/"
