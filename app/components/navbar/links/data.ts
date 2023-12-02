@@ -6,18 +6,18 @@ export const NavigationLinks = [
     },
     {
         title: "Resumé",
-        href: "/",
+        href: "https://drive.google.com/file/d/15abrN9Ae31BfoyYeXhdO8TvHpcKxTQC2/view?usp=drive_link",
         target:"_blank"
     },
     {
         title: "Works",
         href: "#previous-works",
-        target:""
+        target:"_self"
     },
     {
         title: "Contact",
         href: "#contact-section",
-        target:""
+        target:"_self"
     }
 ]
 
@@ -40,6 +40,6 @@ export const FooterLinks = [
     {
         title: "Mail",
         href: "mailto:chenpaulkevin@gmail.com",
-        target:""
+        target:"_self"
     },
 ]
