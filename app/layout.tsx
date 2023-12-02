@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import ParentWrapper from "./parent-wrapper";
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={syne.className}>
         <ParentWrapper>{children}</ParentWrapper>
+        <Analytics />
       </body>
     </html>
   );
