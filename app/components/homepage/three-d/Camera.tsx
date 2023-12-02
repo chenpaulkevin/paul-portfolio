@@ -11,6 +11,7 @@ function Camera() {
       </div>
       <div className="w-full h-[110dvh] rounded-2xl overflow-hidden z-10 relative">
         <iframe
+          title="3d Mouse Follow Showcase"
           className="overflow-hidden sticky top-0"
           src="https://my.spline.design/untitled-66e53400f66cbe099c98911131853d53/"
           width="100%"

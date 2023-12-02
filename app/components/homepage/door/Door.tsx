@@ -18,7 +18,7 @@ function Door() {
     <section ref={ref} className="w-full mt-40 h-[250dvh] overflow-hidden">
       <div className="flex flex-col h-full items-center gap-20 sticky top-0">
         <h1 className="text-primary text-4xl md:text-5xl lg:text-7xl font-bold text-center mb-10 lg:mb-28 sticky top-20">
-          Want to work together?
+          Wanna work together?
         </h1>
         <motion.div
           style={{ scale }}

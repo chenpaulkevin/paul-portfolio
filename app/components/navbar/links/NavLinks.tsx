@@ -72,7 +72,11 @@ function NavLinks() {
               exit="exit"
               className="link-value"
             >
-              <Link className="text-secondary" href={link.href}>
+              <Link
+                className="text-secondary"
+                href={link.href}
+                target={link.target}
+              >
                 {link.title}
               </Link>
             </motion.div>
@@ -91,7 +95,11 @@ function NavLinks() {
                 animate="enter"
                 exit="exit"
               >
-                <Link className="text-secondary" href={link.href}>
+                <Link
+                  className="text-secondary"
+                  href={link.href}
+                  target={link.target}
+                >
                   {link.title}
                 </Link>
                 <div>&#8599;</div>

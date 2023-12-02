@@ -1,37 +1,45 @@
 export const NavigationLinks = [
     {
         title: "Home",
-        href: "/"
+        href: "/",
+        target:""
     },
     {
         title: "Resumé",
-        href: "/"
+        href: "/",
+        target:"_blank"
     },
     {
         title: "Works",
-        href: "/"
+        href: "#previous-works",
+        target:""
     },
     {
         title: "Contact",
-        href: "/"
+        href: "#contact-section",
+        target:""
     }
 ]
 
 export const FooterLinks = [
     {
         title: "LinkedIn ",
-        href: "/"
+        href: "https://www.linkedin.com/in/paul-kevin-chen-a74979188/",
+        target:"_blank"
     },
     {
         title: "Behance",
-        href: "/"
+        href: "https://www.behance.net/paulkevinchen",
+        target:"_blank"
     },
     {
         title: "Dribbble",
-        href: "/"
+        href: "/",
+        target:""
     },
     {
         title: "Mail",
-        href: "/"
+        href: "mailto:chenpaulkevin@gmail.com",
+        target:""
     },
 ]

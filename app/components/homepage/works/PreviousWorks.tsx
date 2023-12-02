@@ -11,9 +11,11 @@ import Link from "next/link";
 const worksVariants = {
   initial: {
     scaleX: 0.96,
+    borderRadius: "15% 15% 0% 0%",
   },
   enter: {
     scaleX: 1,
+    borderRadius: "0% 0% 0% 0%",
     transition: {
       duration: 0.4,
       ease: easeInOut,
@@ -94,7 +96,7 @@ const images = [
     href: "https://www.philbio.org.ph/",
     src: Philbio,
     title: "Philbio",
-    platform: "CMS Platform",
+    platform: "Content Management System",
     description:
       "PhilBio was established for the specific purpose of furthering the biodiversity conservation activities of the 'Philippines Biodiversity Conservation Programme (PBCP)' initiated in the 1990's.",
   },
@@ -125,7 +127,8 @@ const WorkItem = ({
     variants={worksVariants}
     initial="initial"
     whileInView="enter"
-    className="sticky top-0 mt-16 lg:mt-96"
+    viewport={{ once: true, amount: 0.15 }}
+    className="sticky top-0 mt-16 lg:mt-96 overflow-hidden"
   >
     <div className={sectionStyles}>
       <div className="w-full h-full flex justify-center items-center lg:hidden">
@@ -230,7 +233,7 @@ const WorkItem = ({
         placeholder="blur"
         quality={100}
         fill
-        sizes="100dvw"
+        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw"
         style={{ objectFit: "cover" }}
       />
     </div>
@@ -238,11 +241,11 @@ const WorkItem = ({
 );
 
 const PreviousWorks = () => (
-  <section>
+  <section id="previous-works">
     <div className="w-full">
       <div className="h-screen w-full flex justify-center bg-primary items-center sticky top-0">
-        <h1 className="text-secondary text-5xl px-4 text-center lg:text-7xl font-bold">
-          I like making websites
+        <h1 className="text-secondary text-5xl px-4 text-center lg:text-7xl px-2 container mx-auto font-bold">
+          I like building websites
         </h1>
       </div>
 

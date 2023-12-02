@@ -5,7 +5,7 @@ import Image from "next/image";
 //Components:
 import Marquee from "./Marquee";
 import Balls from "./Balls";
-import LearnMore from "../../../../public/learn-more.png";
+import LearnMore from "/public/learn-more.png";
 
 const spinAnimation = {
   animate: {
@@ -53,7 +53,7 @@ function Header() {
                     alt="learn more image"
                     fill
                     quality={100}
-                    sizes="100%"
+                    sizes="(max-width: 768px) 0vw, (max-width: 1200px) 50vw, 33vw"
                     priority
                     style={{ objectFit: "cover" }}
                   ></Image>
