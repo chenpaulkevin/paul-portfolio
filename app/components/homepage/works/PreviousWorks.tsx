@@ -71,7 +71,7 @@ const buttonVariant = {
     x: 0,
     rotate: 0,
     transition: {
-      delay: 0.5,
+      delay: 0.3,
       duration: 0.5,
       ease: easeInOut,
     },

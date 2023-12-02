@@ -72,7 +72,7 @@ const slideUpVariant = {
 
 function BrandGrid() {
   return (
-    <section className="my-12">
+    <section className="md:my-12">
       <div className="w-full h-full lg:h-[100dvh] container mx-auto py-8">
         <div className="grid grid-rows-4 grid-cols-1 lg:grid-cols-4 h-full gap-8 md:gap-12 lg:gap-4">
           <motion.div

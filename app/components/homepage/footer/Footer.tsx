@@ -18,14 +18,14 @@ function Footer() {
                 <p>Connect</p>
               </h1>{" "}
               <div className="flex gap-2 md:gap-4 items-center">
-                <h1 className="font-semibold text-2xl lg:text-5xl">
+                <h1 className="font-semibold text-2xl md:text-3xl lg:text-5xl">
                   <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
                     chenpaulkevin@gmail.com
                   </Link>
                 </h1>
                 <div className="relative flex justify-center items-center">
                   <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
-                    <div className="h-12 w-12 md:h-12 md:w-12 rounded-full md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
+                    <div className="md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
                       &#8599;
                     </div>
                   </Link>
