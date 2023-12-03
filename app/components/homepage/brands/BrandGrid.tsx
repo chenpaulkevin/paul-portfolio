@@ -8,6 +8,8 @@ import Link from "next/link";
 import MarkDark from "/public/mark-dark.png";
 import ApexCode from "/public/apex-code.jpg";
 import AddIn from "/public/add-in.jpg";
+import Zenyama from "/public/zenyama.jpg";
+import Raijin from "/public/raijin.jpg";
 
 const slideRightVariant = {
   initial: {
@@ -107,11 +109,25 @@ function BrandGrid() {
             variants={slideDownVariant}
             initial="initial"
             whileInView="enter"
-            className="row-span-1 h-72 md:h-[40dvh] lg:h-auto w-full bg-bento rounded-2xl flex justify-center items-center relative"
+            className="row-span-1 h-72 md:h-[40dvh] lg:h-auto w-full bg-bento rounded-2xl flex justify-center items-center relative overflow-hidden"
           >
+            <Link
+              className="absolute w-full h-full z-20"
+              aria-label="Learn More about Zenyama's Brand Identity Guidelines"
+              href="https://www.behance.net/gallery/185920987/Zenyama-Brand-Identity"
+              target="_blank"
+            ></Link>
+            <Image
+              src={Zenyama}
+              quality={100}
+              fill
+              alt="Zenyama Brand Identity"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw"
+              style={{ objectFit: "cover", objectPosition: "center bottom" }}
+            ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
               <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex gap-4 text-xl items-center justify-center">
-                Mindsense <span className="text-xl">&#8599;</span>
+                Zenyama <span className="text-xl">&#8599;</span>
               </div>
             </div>
           </motion.div>
@@ -132,7 +148,7 @@ function BrandGrid() {
               src={AddIn}
               quality={100}
               fill
-              alt="Apex Code Brand Identity"
+              alt="Add In Brand Identity"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
               style={{ objectFit: "cover", objectPosition: "center center" }}
@@ -148,8 +164,22 @@ function BrandGrid() {
             variants={slideLeftVariant}
             initial="initial"
             whileInView="enter"
-            className="row-span-1 h-72 md:h-[40dvh] lg:h-auto lg:col-span-2 w-full bg-bento rounded-2xl flex justify-center items-center relative"
+            className="row-span-1 h-72 md:h-[40dvh] lg:h-auto lg:col-span-2 w-full bg-bento rounded-2xl flex justify-center items-center relative overflow-hidden"
           >
+            <Link
+              className="absolute w-full h-full z-20"
+              aria-label="Learn More about Raijin's Brand Identity Guidelines"
+              href="https://www.behance.net/gallery/185925425/Raijin-Mock-Up"
+              target="_blank"
+            ></Link>
+            <Image
+              src={Raijin}
+              quality={100}
+              fill
+              alt="Raijin Brand Identity"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw"
+              style={{ objectFit: "cover", objectPosition: "bottom bottom" }}
+            ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
               <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex gap-4 text-xl items-center justify-center">
                 Raijin Streetwear<span className="text-xl">&#8599;</span>
