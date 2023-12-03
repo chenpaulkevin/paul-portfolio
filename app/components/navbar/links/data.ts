@@ -34,8 +34,8 @@ export const FooterLinks = [
     },
     {
         title: "Dribbble",
-        href: "/",
-        target:""
+        href: "https://dribbble.com/chenpaulkevin",
+        target:"_blank"
     },
     {
         title: "Mail",
