@@ -26,7 +26,7 @@ function Footer() {
                 <div className="relative flex justify-center items-center">
                   <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
                     <div className="md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
-                      &#8599;
+                      &#129109;
                     </div>
                   </Link>
                 </div>
@@ -42,7 +42,7 @@ function Footer() {
                 href="https://www.linkedin.com/in/paul-kevin-chen-a74979188/"
                 target="_blank"
               >
-                LinkedIn &#8599;
+                LinkedIn &#129109;
               </Link>
             </div>
             <div>
@@ -50,7 +50,7 @@ function Footer() {
                 href="https://www.behance.net/paulkevinchen"
                 target="_blank"
               >
-                Behance &#8599;
+                Behance &#129109;
               </Link>
             </div>
             <div>
@@ -59,11 +59,11 @@ function Footer() {
                 href="https://drive.google.com/file/d/15abrN9Ae31BfoyYeXhdO8TvHpcKxTQC2/view?usp=drive_link"
                 target="_blank"
               >
-                Resumé &#8599;
+                Resumé &#129109;
               </Link>
             </div>
             <div>
-              <Link href="/">Back to Top &#x2191;</Link>
+              <Link href="/">Back to Top &#129105;</Link>
             </div>
           </div>
         </div>

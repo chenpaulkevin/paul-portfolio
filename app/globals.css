@@ -177,12 +177,12 @@ body {
     position: relative;
   }
   .door {
-    width: 300px !important;
-    height: 400px !important;
+    width: 200px !important;
+    height: 300px !important;
   }
   .door-light {
     background-image: conic-gradient(
-      from 90deg at 50% 0%,
+      from 90deg at 67% 0%,
       #e5e6eb,
       #e5e6eb8c,
       #1e212400,
@@ -193,7 +193,7 @@ body {
   }
   .door-light-2 {
     background-image: conic-gradient(
-      from -90deg at 50% 0%,
+      from -90deg at 33% 0%,
       #1e212400,
       #1e212400,
       #1e212400,

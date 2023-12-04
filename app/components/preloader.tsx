@@ -7,7 +7,7 @@ const preloaderVars = {
     borderRadius: "0% 0% 0% 0%",
   },
   exit: {
-    y: "-100dvh",
+    y: "-100vh",
     borderRadius: "0% 0% 45% 45%",
     transition: {
       duration: 1,

@@ -220,7 +220,7 @@ const WorkItem = ({
                 whileInView="enter"
                 className="h-12 w-12 rounded-full bg-primary justify-center items-center text-secondary flex text-4xl"
               >
-                &#8599;
+                &#129109;
               </motion.div>
             </div>
           </Link>

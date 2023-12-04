@@ -102,7 +102,7 @@ function NavLinks() {
                 >
                   {link.title}
                 </Link>
-                <div>&#8599;</div>
+                <div>&#129109;</div>
               </motion.div>
             </div>
           );

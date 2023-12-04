@@ -74,7 +74,7 @@ const slideUpVariant = {
 
 function BrandGrid() {
   return (
-    <section className="md:my-12">
+    <section className="md:my-12 overflow-hidden">
       <div className="w-full h-full lg:h-[100dvh] container mx-auto py-8">
         <div className="grid grid-rows-4 grid-cols-1 lg:grid-cols-4 h-full gap-8 md:gap-12 lg:gap-4">
           <motion.div
@@ -100,7 +100,7 @@ function BrandGrid() {
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
               <div className="flex gap-4 items-center justify-center text-xl text-primary py-2 px-4 bg-secondary font-bold rounded-full ">
-                Apex Code<span className="text-xl">&#8599;</span>
+                Apex Code<span className="text-xl">&#129109;</span>
               </div>
             </div>
           </motion.div>
@@ -127,7 +127,7 @@ function BrandGrid() {
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
               <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex gap-4 text-xl items-center justify-center">
-                Zenyama <span className="text-xl">&#8599;</span>
+                Zenyama <span className="text-xl">&#129109;</span>
               </div>
             </div>
           </motion.div>
@@ -155,7 +155,7 @@ function BrandGrid() {
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
               <div className="flex gap-4 items-center justify-center text-xl text-primary py-2 px-4 bg-secondary font-bold rounded-full ">
-                Add In<span className="text-xl">&#8599;</span>
+                Add In<span className="text-xl">&#129109;</span>
               </div>
             </div>
           </motion.div>
@@ -182,7 +182,7 @@ function BrandGrid() {
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
               <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex gap-4 text-xl items-center justify-center">
-                Raijin Streetwear<span className="text-xl">&#8599;</span>
+                Raijin Streetwear<span className="text-xl">&#129109;</span>
               </div>
             </div>
           </motion.div>

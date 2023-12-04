@@ -3,7 +3,7 @@ import React from "react";
 function Camera() {
   return (
     <section className="py-4 md:py-36">
-      <div className="w-full h-screen sticky top-0 flex justify-center items-center z-0">
+      <div className="w-full h-screen sticky top-0 flex justify-center items-center z-0 container mx-auto">
         <h1 className="text-primary text-center text-5xl lg:text-7xl font-bold">
           I also create 3d stuff
         </h1>
