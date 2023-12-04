@@ -141,6 +141,12 @@ body {
 }
 .door {
   box-shadow: 0px 0px 20px 0px #e5e6ebb9;
+  top: 0px;
+  position: relative;
+}
+.door {
+  width: 300px !important;
+  height: 400px !important;
 }
 .door-light {
   background-image: conic-gradient(
@@ -164,10 +170,19 @@ body {
     #e5e6eb
   );
 }
-@media (min-width: 600px) {
+
+@media (min-width: 320px) {
+  .door-container {
+    top: 100px;
+    position: relative;
+  }
+  .door {
+    width: 300px !important;
+    height: 400px !important;
+  }
   .door-light {
     background-image: conic-gradient(
-      from 90deg at 75% 0%,
+      from 90deg at 50% 0%,
       #e5e6eb,
       #e5e6eb8c,
       #1e212400,
@@ -178,7 +193,7 @@ body {
   }
   .door-light-2 {
     background-image: conic-gradient(
-      from -90deg at 25% 0%,
+      from -90deg at 50% 0%,
       #1e212400,
       #1e212400,
       #1e212400,
@@ -188,10 +203,18 @@ body {
     );
   }
 }
-@media (min-width: 801px) {
+@media (min-width: 481px) {
+  .door-container {
+    top: 20px;
+    position: relative;
+  }
+  .door {
+    width: 300px !important;
+    height: 400px !important;
+  }
   .door-light {
     background-image: conic-gradient(
-      from 90deg at 75% 0%,
+      from 90deg at 63% 0%,
       #e5e6eb,
       #e5e6eb8c,
       #1e212400,
@@ -202,7 +225,71 @@ body {
   }
   .door-light-2 {
     background-image: conic-gradient(
-      from -90deg at 25% 0%,
+      from -90deg at 37% 0%,
+      #1e212400,
+      #1e212400,
+      #1e212400,
+      #1e212400,
+      #e5e6eb8c,
+      #e5e6eb
+    );
+  }
+}
+@media (min-width: 641px) {
+  .door-container {
+    top: 150px;
+    position: relative;
+  }
+  .door {
+    width: 300px !important;
+    height: 400px !important;
+  }
+  .door-light {
+    background-image: conic-gradient(
+      from 90deg at 63% 0%,
+      #e5e6eb,
+      #e5e6eb8c,
+      #1e212400,
+      #1e212400,
+      #1e212400,
+      #1e212400
+    );
+  }
+  .door-light-2 {
+    background-image: conic-gradient(
+      from -90deg at 37% 0%,
+      #1e212400,
+      #1e212400,
+      #1e212400,
+      #1e212400,
+      #e5e6eb8c,
+      #e5e6eb
+    );
+  }
+}
+@media (min-width: 961px) {
+  .door-container {
+    top: -50px;
+    position: relative;
+  }
+  .door {
+    width: 350px !important;
+    height: 450px !important;
+  }
+  .door-light {
+    background-image: conic-gradient(
+      from 90deg at 71% 0%,
+      #e5e6eb,
+      #e5e6eb8c,
+      #1e212400,
+      #1e212400,
+      #1e212400,
+      #1e212400
+    );
+  }
+  .door-light-2 {
+    background-image: conic-gradient(
+      from -90deg at 29% 0%,
       #1e212400,
       #1e212400,
       #1e212400,
@@ -213,17 +300,17 @@ body {
   }
 }
 @media (min-width: 1025px) {
-  .door {
-    width: 400px !important;
-    height: 450px !important;
-  }
   .door-container {
-    top: -40px;
+    top: -50px;
     position: relative;
+  }
+  .door {
+    width: 350px !important;
+    height: 450px !important;
   }
   .door-light {
     background-image: conic-gradient(
-      from 90deg at 66.5% 0%,
+      from 90deg at 71% 0%,
       #e5e6eb,
       #e5e6eb8c,
       #1e212400,
@@ -234,7 +321,7 @@ body {
   }
   .door-light-2 {
     background-image: conic-gradient(
-      from -90deg at 33.5% 0%,
+      from -90deg at 29% 0%,
       #1e212400,
       #1e212400,
       #1e212400,
@@ -252,10 +339,6 @@ body {
   .door {
     width: 400px !important;
     height: 500px !important;
-  }
-  .door-container {
-    top: -40px;
-    position: relative;
   }
   .door-light {
     background-image: conic-gradient(

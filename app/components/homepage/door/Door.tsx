@@ -26,7 +26,7 @@ function Door() {
         >
           <motion.div
             style={{ y: doorY }}
-            className="h-[300px] w-[200px] md:h-[400px] md:w-[300px] lg:h-[500px] lg:w-[400px] bg-primary rounded-t-full shadow-inner door"
+            className="bg-primary rounded-t-full shadow-inner door"
           ></motion.div>
           <motion.div style={{ y: doorY }} className="flex h-96 -mt-[1px]">
             <div className="door-light h-[100dvh] w-[300px] md:w-[400px] lg:w-[600px] relative"></div>

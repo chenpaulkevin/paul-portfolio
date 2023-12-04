@@ -1,5 +1,4 @@
 import React from "react";
-import Script from "next/script";
 
 function Camera() {
   return (
@@ -9,7 +8,7 @@ function Camera() {
           I also create 3d stuff
         </h1>
       </div>
-      <div className="w-full h-[110dvh] rounded-2xl overflow-hidden z-10 relative">
+      <div className="w-full h-[110dvh] bg-bento rounded-2xl overflow-hidden z-10 relative">
         <iframe
           title="3d Mouse Follow Showcase"
           className="overflow-hidden sticky top-0"
