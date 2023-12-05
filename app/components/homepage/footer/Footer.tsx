@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "./Marquee";
 import Link from "next/link";
 import ArrowUpRight from "../../ArrowUpRight";
+import ManilaTime from "../../time";
 
 function Footer() {
   return (
@@ -41,8 +42,8 @@ function Footer() {
             </div>
           </div>
           <div className="h-24 w-full text-secondary text-base md:text-lg lg:text-xl flex flex-wrap justify-between items-center mt-10">
-            <div className="w-full text-center font-bold lg:w-auto lg:text-start lg: font-normal">
-              Currently in Manila (GMT+8)
+            <div className="w-full text-center font-bold lg:w-2/12 lg:text-start lg: font-normal flex gap-4">
+              <ManilaTime />
             </div>
             <div>
               <Link
@@ -65,10 +66,11 @@ function Footer() {
             </div>
             <div>
               <Link
+                className="lg:flex hidden"
                 href="https://www.behance.net/paulkevinchen"
                 target="_blank"
               >
-                <div className="flex items-center justify-center gap-1">
+                <div className="lg:flex hidden items-center justify-center gap-1">
                   <div> Behance</div>
                   <div className="h-6 w-6 flex justify-center items-center">
                     <ArrowUpRight

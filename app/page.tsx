@@ -1,6 +1,8 @@
+import React from "react";
+import dynamic from "next/dynamic";
+
 import NavigationBar from "./components/navbar/NavigationBar";
 import Header from "./components/homepage/header/Header";
-import dynamic from "next/dynamic";
 
 const Camera = dynamic(() => import("./components/homepage/three-d/Camera"));
 const Footer = dynamic(() => import("./components/homepage/footer/Footer"), {
@@ -16,16 +18,16 @@ const Door = dynamic(() => import("./components/homepage/door/Door"), {
   ssr: false,
 });
 
-export default function Home() {
-  return (
-    <main>
-      <NavigationBar />
-      <Header />
-      <PreviousWorks />
-      <BrandGrid />
-      <Camera></Camera>
-      <Door></Door>
-      <Footer></Footer>
-    </main>
-  );
-}
+const Home: React.FC = () => (
+  <main>
+    <NavigationBar />
+    <Header />
+    <PreviousWorks />
+    <BrandGrid />
+    <Camera />
+    <Door />
+    <Footer />
+  </main>
+);
+
+export default Home;

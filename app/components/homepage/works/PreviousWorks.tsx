@@ -4,79 +4,43 @@ import Image from "next/image";
 import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-//Components:
+
+// Components:
 const ArrowUpRight = dynamic(() => import("../../ArrowUpRight"));
 import Fangster from "/public/fangster.jpg";
 import Philbio from "/public/philbio.jpg";
 import Pltrades from "/public/pltrades.jpg";
 
 const worksVariants = {
-  initial: {
-    scaleX: 0.96,
-    borderRadius: "15% 15% 0% 0%",
-  },
+  initial: { scaleX: 0.96, borderRadius: "15% 15% 0% 0%" },
   enter: {
     scaleX: 1,
     borderRadius: "0% 0% 0% 0%",
-    transition: {
-      duration: 0.4,
-      ease: easeInOut,
-    },
+    transition: { duration: 0.4, ease: easeInOut },
   },
 };
-const titleVariants = {
-  initial: {
-    y: "100%",
-  },
-  enter: {
-    y: 0,
-    transition: {
-      duration: 0.4,
-      ease: easeInOut,
-    },
-  },
+const textVariants = {
+  initial: { y: "100%" },
+  enter: { y: 0, transition: { duration: 0.4, ease: easeInOut } },
 };
 const platformVariants = {
-  initial: {
-    y: "100%",
-  },
-  enter: {
-    y: 0,
-    transition: {
-      delay: 0.2,
-      duration: 0.4,
-      ease: easeInOut,
-    },
-  },
+  initial: { y: "100%" },
+  enter: { y: 0, transition: { delay: 0.2, duration: 0.4, ease: easeInOut } },
 };
 const descriptionVariants = {
-  initial: {
-    y: "100%",
-    opacity: 0,
-  },
+  initial: { y: "100%", opacity: 0 },
   enter: {
     y: 0,
     opacity: 1,
-    transition: {
-      delay: 0.4,
-      duration: 0.6,
-      ease: easeInOut,
-    },
+    transition: { delay: 0.4, duration: 0.6, ease: easeInOut },
   },
 };
 const buttonVariant = {
-  initial: {
-    x: "-280%",
-    rotate: -135,
-  },
+  initial: { x: "-280%", rotate: -135 },
   enter: {
     x: 0,
     rotate: 0,
-    transition: {
-      delay: 0.3,
-      duration: 0.5,
-      ease: easeInOut,
-    },
+    transition: { delay: 0.3, duration: 0.5, ease: easeInOut },
   },
 };
 
@@ -119,7 +83,7 @@ const WorkItem = ({
   platform,
   description,
 }: {
-  href: string;
+  href: any;
   src: any;
   title: string;
   platform: string;
@@ -133,6 +97,7 @@ const WorkItem = ({
     className="sticky top-0 mt-16 lg:mt-96 overflow-hidden"
   >
     <div className={sectionStyles}>
+      {/* Mobile View */}
       <div className="w-full h-full flex justify-center items-center lg:hidden">
         <div className="flex flex-col justify-center h-full">
           <div className="z-10 overflow-hidden text-center mb-2">
@@ -148,7 +113,7 @@ const WorkItem = ({
           </div>
           <div className="z-10 overflow-hidden w-fit mb-6">
             <motion.div
-              variants={titleVariants}
+              variants={textVariants}
               initial="initial"
               whileInView="enter"
             >
@@ -159,7 +124,7 @@ const WorkItem = ({
             <div className="z-10 border-2 h-14 flex justify-center items-center overflow-hidden border-primary relative rounded-xl">
               <motion.div
                 className="text-center"
-                variants={titleVariants}
+                variants={textVariants}
                 initial="initial"
                 whileInView="enter"
               >
@@ -171,6 +136,8 @@ const WorkItem = ({
           </Link>
         </div>
       </div>
+
+      {/* Desktop View */}
       <div className="z-20 flex w-full h-full py-32 container mx-auto hidden lg:flex">
         <div className="flex flex-col h-full place-content-end w-1/3">
           <div className="z-10 overflow-hidden">
@@ -186,7 +153,7 @@ const WorkItem = ({
           </div>
           <div className="z-10 overflow-hidden w-fit">
             <motion.div
-              variants={titleVariants}
+              variants={textVariants}
               initial="initial"
               whileInView="enter"
             >
@@ -194,7 +161,9 @@ const WorkItem = ({
             </motion.div>
           </div>
         </div>
+
         <div className="flex h-full w-2/4"></div>
+
         <div className="z-10 flex flex-col justify-between h-full w-1/4">
           <div className="z-10 overflow-hidden w-fit">
             <motion.div
@@ -205,6 +174,7 @@ const WorkItem = ({
               <span className="z-10 text-primary">{description}</span>
             </motion.div>
           </div>
+
           <Link className="place-self-end" href={href} target="_blank">
             <div className="py-2 pr-2 pl-4 w-fit rounded-full border-2 border-primary flex items-center text-primary text-xl gap-2 mr-4">
               <motion.div
@@ -231,6 +201,7 @@ const WorkItem = ({
           </Link>
         </div>
       </div>
+
       <Image
         className="brightness-[40%]"
         alt={`${title} Background Image`}
