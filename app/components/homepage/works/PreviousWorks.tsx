@@ -163,7 +163,7 @@ const WorkItem = ({
                 initial="initial"
                 whileInView="enter"
               >
-                <span className="text-center text-primary text-lg isolate font-bold">
+                <span className="text-center text-primary text-lg isolate font-bold whitespace-nowrap">
                   Visit Website
                 </span>
               </motion.div>
@@ -208,6 +208,7 @@ const WorkItem = ({
           <Link className="place-self-end" href={href} target="_blank">
             <div className="py-2 pr-2 pl-4 w-fit rounded-full border-2 border-primary flex items-center text-primary text-xl gap-2 mr-4">
               <motion.div
+                className="whitespace-nowrap"
                 initial={{ opacity: 0 }}
                 whileInView={{
                   opacity: 1,
