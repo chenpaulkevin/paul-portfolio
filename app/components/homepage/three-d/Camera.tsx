@@ -5,7 +5,7 @@ const Camera = () => {
     <section className="py-4 md:py-36">
       <div className="w-full h-screen sticky top-0 flex justify-center items-center z-0 container mx-auto">
         <h1 className="text-primary text-center text-5xl lg:text-7xl font-bold flex flex-col justify-center items-center">
-          <p className="text-base hidden lg:flex mb-4 text-center w-auto">
+          <p className="text-base hidden xl:flex mb-4 text-center w-auto">
             Move your mouse around below.
           </p>
           I also create 3D stuff
