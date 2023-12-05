@@ -3,6 +3,7 @@ import React from "react";
 import { easeInOut, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 //Components:
 import MarkDark from "/public/mark-dark.png";
@@ -10,6 +11,8 @@ import ApexCode from "/public/apex-code.jpg";
 import AddIn from "/public/add-in.jpg";
 import Zenyama from "/public/zenyama.jpg";
 import Raijin from "/public/raijin.jpg";
+
+const ArrowUpRight = dynamic(() => import("../../ArrowUpRight"));
 
 const slideRightVariant = {
   initial: {
@@ -99,8 +102,13 @@ function BrandGrid() {
               style={{ objectFit: "cover", objectPosition: "right bottom" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
-              <div className="flex gap-4 items-center justify-center text-xl text-primary py-2 px-4 bg-secondary font-bold rounded-full ">
-                Apex Code<span className="text-xl">&#129109;</span>
+              <div className="flex gap-1 items-center justify-center text-xl text-primary py-2 px-4 bg-secondary font-bold rounded-full ">
+                Apex Code
+                <span className="h-6 w-6 items-center flex justify-center">
+                  <ArrowUpRight
+                    props={{ bgColor: "bg-primary", width: 2, length: 8 }}
+                  />
+                </span>
               </div>
             </div>
           </motion.div>
@@ -126,8 +134,11 @@ function BrandGrid() {
               style={{ objectFit: "cover", objectPosition: "center bottom" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
-              <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex gap-4 text-xl items-center justify-center">
-                Zenyama <span className="text-xl">&#129109;</span>
+              <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex text-xl items-center justify-center gap-1">
+                Zenyama{" "}
+                <span className="h-6 w-6 items-center flex justify-center">
+                  <ArrowUpRight props={{ bgColor: "bg-primary", width: 2 }} />
+                </span>
               </div>
             </div>
           </motion.div>
@@ -153,8 +164,13 @@ function BrandGrid() {
               style={{ objectFit: "cover", objectPosition: "center center" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
-              <div className="flex gap-4 items-center justify-center text-xl text-primary py-2 px-4 bg-secondary font-bold rounded-full ">
-                Add In<span className="text-xl">&#129109;</span>
+              <div className="flex gap-1 items-center justify-center text-xl text-primary py-2 px-4 bg-secondary font-bold rounded-full ">
+                Add In
+                <span className="h-6 w-6 items-center flex justify-center">
+                  <ArrowUpRight
+                    props={{ bgColor: "bg-primary", width: 2, length: 8 }}
+                  />
+                </span>
               </div>
             </div>
           </motion.div>
@@ -180,8 +196,13 @@ function BrandGrid() {
               style={{ objectFit: "cover", objectPosition: "bottom bottom" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
-              <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex gap-4 text-xl items-center justify-center">
-                Raijin Streetwear<span className="text-xl">&#129109;</span>
+              <div className="py-2 px-4 bg-secondary font-bold rounded-full text-primary flex gap-1 text-xl items-center justify-center">
+                Raijin Streetwear
+                <span className="h-6 w-6 items-center flex justify-center">
+                  <ArrowUpRight
+                    props={{ bgColor: "bg-primary", width: 2, length: 8 }}
+                  />
+                </span>
               </div>
             </div>
           </motion.div>

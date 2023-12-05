@@ -2,8 +2,11 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
 //Components:
 import { NavigationLinks, FooterLinks } from "./data";
+const ArrowUpRight = dynamic(() => import("../../ArrowUpRight"));
 
 const linkVariants = {
   initial: {
@@ -100,9 +103,19 @@ function NavLinks() {
                   href={link.href}
                   target={link.target}
                 >
-                  {link.title}
+                  <div className="flex items-center justify-center">
+                    <div> {link.title}</div>
+                    <div className="h-4 w-4 flex justify-center items-center">
+                      <ArrowUpRight
+                        props={{
+                          bgColor: "bg-secondary",
+                          width: 1,
+                          length: 10,
+                        }}
+                      ></ArrowUpRight>
+                    </div>
+                  </div>
                 </Link>
-                <div>&#129109;</div>
               </motion.div>
             </div>
           );

@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "./Marquee";
 import Link from "next/link";
+import ArrowUpRight from "../../ArrowUpRight";
 
 function Footer() {
   return (
@@ -25,8 +26,14 @@ function Footer() {
                 </h1>
                 <div className="relative flex justify-center items-center">
                   <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
-                    <div className="md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
-                      &#129109;
+                    <div className="md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full p-1 md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
+                      <ArrowUpRight
+                        props={{
+                          bgColor: "bg-primary",
+                          width: 3,
+                          length: 10,
+                        }}
+                      ></ArrowUpRight>
                     </div>
                   </Link>
                 </div>
@@ -42,7 +49,18 @@ function Footer() {
                 href="https://www.linkedin.com/in/paul-kevin-chen-a74979188/"
                 target="_blank"
               >
-                LinkedIn &#129109;
+                <div className="flex items-center justify-center gap-1">
+                  <div> LinkedIn</div>
+                  <div className="h-6 w-6 flex justify-center items-center">
+                    <ArrowUpRight
+                      props={{
+                        bgColor: "bg-secondary",
+                        width: 2,
+                        length: 10,
+                      }}
+                    ></ArrowUpRight>
+                  </div>
+                </div>
               </Link>
             </div>
             <div>
@@ -50,7 +68,18 @@ function Footer() {
                 href="https://www.behance.net/paulkevinchen"
                 target="_blank"
               >
-                Behance &#129109;
+                <div className="flex items-center justify-center gap-1">
+                  <div> Behance</div>
+                  <div className="h-6 w-6 flex justify-center items-center">
+                    <ArrowUpRight
+                      props={{
+                        bgColor: "bg-secondary",
+                        width: 2,
+                        length: 10,
+                      }}
+                    ></ArrowUpRight>
+                  </div>
+                </div>
               </Link>
             </div>
             <div>
@@ -59,11 +88,35 @@ function Footer() {
                 href="https://drive.google.com/file/d/15abrN9Ae31BfoyYeXhdO8TvHpcKxTQC2/view?usp=drive_link"
                 target="_blank"
               >
-                Resumé &#129109;
+                <div className="flex items-center justify-center gap-1">
+                  <div> Resumé</div>
+                  <div className="h-6 w-6 flex justify-center items-center">
+                    <ArrowUpRight
+                      props={{
+                        bgColor: "bg-secondary",
+                        width: 2,
+                        length: 10,
+                      }}
+                    ></ArrowUpRight>
+                  </div>
+                </div>
               </Link>
             </div>
             <div>
-              <Link href="/">Back to Top &#129105;</Link>
+              <Link href="/">
+                <div className="flex items-center justify-center gap-1">
+                  <div> Back to Top</div>
+                  <div className="h-6 w-6 flex justify-center items-center -rotate-45">
+                    <ArrowUpRight
+                      props={{
+                        bgColor: "bg-secondary",
+                        width: 2,
+                        length: 10,
+                      }}
+                    ></ArrowUpRight>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

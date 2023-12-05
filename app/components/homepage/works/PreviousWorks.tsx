@@ -2,11 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import { easeInOut, motion } from "framer-motion";
+import Link from "next/link";
+import dynamic from "next/dynamic";
 //Components:
+const ArrowUpRight = dynamic(() => import("../../ArrowUpRight"));
 import Fangster from "/public/fangster.jpg";
 import Philbio from "/public/philbio.jpg";
 import Pltrades from "/public/pltrades.jpg";
-import Link from "next/link";
 
 const worksVariants = {
   initial: {
@@ -220,7 +222,9 @@ const WorkItem = ({
                 whileInView="enter"
                 className="h-12 w-12 rounded-full bg-primary justify-center items-center text-secondary flex text-4xl"
               >
-                &#129109;
+                <ArrowUpRight
+                  props={{ bgColor: "bg-secondary", width: 4, length: 10 }}
+                />
               </motion.div>
             </div>
           </Link>
