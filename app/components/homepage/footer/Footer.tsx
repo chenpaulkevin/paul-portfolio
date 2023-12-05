@@ -21,12 +21,15 @@ function Footer() {
               </h1>{" "}
               <div className="flex gap-2 md:gap-4 items-center">
                 <h1 className="font-semibold text-2xl md:text-3xl lg:text-5xl">
-                  <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
-                    chenpaulkevin@gmail.com
+                  <Link href="mailto:chenpaulkevindev@gmail.com" target="_self">
+                    chenpaulkevindev@gmail.com
                   </Link>
                 </h1>
                 <div className="relative flex justify-center items-center">
-                  <Link href="mailto:chenpaulkevin@gmail.com" target="_self">
+                  <Link
+                    href="mailto:chenpaulkevindev@gmail.com.com"
+                    target="_self"
+                  >
                     <div className="md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full p-1 md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
                       <ArrowUpRight
                         props={{
