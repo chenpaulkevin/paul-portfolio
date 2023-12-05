@@ -53,7 +53,7 @@ function Header() {
                     alt="learn more image"
                     fill
                     quality={100}
-                    sizes="(max-width: 768px) 0vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="168px"
                     priority
                     style={{ objectFit: "cover" }}
                   ></Image>

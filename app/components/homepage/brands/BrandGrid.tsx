@@ -95,7 +95,7 @@ function BrandGrid() {
               quality={100}
               fill
               alt="Apex Code Brand Identity"
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw"
+              sizes="(min-width: 1540px) 760px, (min-width: 1280px) 552px, (min-width: 1040px) 440px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
               style={{ objectFit: "cover", objectPosition: "right bottom" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
@@ -122,7 +122,7 @@ function BrandGrid() {
               quality={100}
               fill
               alt="Zenyama Brand Identity"
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw"
+              sizes="(min-width: 1540px) 372px, (min-width: 1280px) 268px, (min-width: 1040px) 212px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
               style={{ objectFit: "cover", objectPosition: "center bottom" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
@@ -149,8 +149,7 @@ function BrandGrid() {
               quality={100}
               fill
               alt="Add In Brand Identity"
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+              sizes="(min-width: 1540px) 372px, (min-width: 1280px) 268px, (min-width: 1040px) 212px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
               style={{ objectFit: "cover", objectPosition: "center center" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
@@ -177,7 +176,7 @@ function BrandGrid() {
               quality={100}
               fill
               alt="Raijin Brand Identity"
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw"
+              sizes="(min-width: 1540px) 760px, (min-width: 1280px) 552px, (min-width: 1040px) 440px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
               style={{ objectFit: "cover", objectPosition: "bottom bottom" }}
             ></Image>
             <div className="z-10 absolute flex bottom-4 left-4 ">
@@ -199,7 +198,7 @@ function BrandGrid() {
                 quality={100}
                 fill
                 style={{ objectFit: "contain" }}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(min-width: 1040px) 80px, 64px"
                 alt="Brand Mark"
               ></Image>
             </div>

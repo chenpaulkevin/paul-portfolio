@@ -233,7 +233,7 @@ const WorkItem = ({
         placeholder="blur"
         quality={100}
         fill
-        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 100vw"
+        sizes="100vw"
         style={{ objectFit: "cover" }}
       />
     </div>

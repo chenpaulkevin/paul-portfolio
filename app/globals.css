@@ -140,13 +140,11 @@ body {
   transform: translateX(0.5rem) !important;
 }
 .door {
+  width: 300px !important;
+  height: 400px !important;
   box-shadow: 0px 0px 20px 0px #e5e6ebb9;
   top: 0px;
   position: relative;
-}
-.door {
-  width: 300px !important;
-  height: 400px !important;
 }
 .door-light {
   background-image: conic-gradient(
