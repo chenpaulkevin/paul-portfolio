@@ -15,7 +15,14 @@ function ParentWrapper({ children }: { children: React.ReactNode }) {
       window.scrollTo(0, 0);
     }, 2500);
   }, []);
-  return <ReactLenis root>{children}</ReactLenis>;
+  return (
+    <ReactLenis root>
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader></Preloader>}
+      </AnimatePresence>
+      {children}
+    </ReactLenis>
+  );
 }
 
 export default ParentWrapper;

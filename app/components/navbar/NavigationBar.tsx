@@ -33,7 +33,7 @@ const menuVariants = {
 };
 
 function NavigationBar() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   return (
     <>
       <nav className="container mx-auto h-28 flex content-center">
