@@ -61,7 +61,7 @@ export default function Preloader() {
         variants={preloaderVars}
         initial="initial"
         exit="exit"
-        className="top-0 left-0 bg-primary fixed z-50 h-screen w-full flex items-center justify-center font-black tracking-wider text-4xl md:text-7xl lg:text-9xl text-secondary z-[100]"
+        className="top-0 left-0 subpixel-antialiased bg-primary fixed z-50 h-screen w-full flex items-center justify-center font-black tracking-wider text-4xl md:text-7xl lg:text-9xl text-secondary z-[100]"
       >
         <motion.p
           key="words"

@@ -14,16 +14,18 @@ const menuVariants = {
     height: 550,
     top: -8,
     right: -8,
+    opacity: 1,
     transition: {
       duration: 0.5,
       ease: [0.76, 0, 0.24, 1],
     },
   },
   closed: {
-    width: 64,
-    height: 64,
+    width: 0,
+    height: 0,
     top: 0,
     right: 0,
+    opacity: 0,
     transition: {
       duration: 0.5,
       delay: 0.35,
