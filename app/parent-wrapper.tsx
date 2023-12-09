@@ -11,7 +11,7 @@ interface ParentWrapperProps {
 }
 
 const ParentWrapper: React.FC<ParentWrapperProps> = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
