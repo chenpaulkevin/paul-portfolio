@@ -21,7 +21,11 @@ function Footer() {
               </h1>{" "}
               <div className="flex gap-2 md:gap-4 items-center">
                 <h1 className="font-semibold text-2xl md:text-3xl lg:text-5xl">
-                  <Link href="mailto:chenpaulkevindev@gmail.com" target="_self">
+                  <Link
+                    className="mail-to"
+                    href="mailto:chenpaulkevindev@gmail.com"
+                    target="_self"
+                  >
                     chenpaulkevindev@gmail.com
                   </Link>
                 </h1>

@@ -24,7 +24,7 @@ const Home: React.FC = () => (
     <Header />
     <PreviousWorks />
     <BrandGrid />
-    <Camera />
+    {/* <Camera />*/}
     <Door />
     <Footer />
   </main>

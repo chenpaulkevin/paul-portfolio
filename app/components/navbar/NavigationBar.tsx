@@ -14,18 +14,18 @@ const menuVariants = {
     height: 550,
     top: -8,
     right: -8,
-    opacity: 1,
+    borderRadius: ["10rem", "1rem", "1rem"],
     transition: {
       duration: 0.5,
       ease: [0.76, 0, 0.24, 1],
     },
   },
   closed: {
-    width: 0,
-    height: 0,
+    width: "4rem",
+    height: "4rem",
     top: 0,
     right: 0,
-    opacity: 0,
+    borderRadius: ["1rem", "1rem", "10rem"],
     transition: {
       duration: 0.5,
       delay: 0.35,
@@ -59,7 +59,7 @@ function NavigationBar() {
               variants={menuVariants}
               animate={isActive ? "open" : "closed"}
               initial="closed"
-              className="w-[350px] h-[550px] rounded-[2rem] absolute z-40 right-0 top-0 menu"
+              className="w-16 h-16 absolute border-2xl rounded-full z-40 right-0 top-0 menu"
             >
               <AnimatePresence>{isActive && <NavLinks />}</AnimatePresence>
             </motion.div>
