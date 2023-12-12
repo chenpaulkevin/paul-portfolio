@@ -29,7 +29,9 @@ const ManilaTime = () => {
 
   return (
     <div>
-      <p className="whitespace-nowrap">Currently in Manila: {manilaTime}</p>
+      <p className="whitespace-nowrap tabular-nums lining-nums">
+        Currently in Manila: {manilaTime}
+      </p>
     </div>
   );
 };

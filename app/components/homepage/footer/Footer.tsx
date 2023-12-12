@@ -20,7 +20,7 @@ function Footer() {
                 <p>Connect</p>
               </h1>{" "}
               <div className="flex gap-2 md:gap-4 items-center">
-                <h1 className="font-semibold text-2xl md:text-3xl lg:text-5xl">
+                <h1 className="font-semibold text-lg sm:text-2xl md:text-3xl lg:text-5xl">
                   <Link
                     className="mail-to"
                     href="mailto:chenpaulkevindev@gmail.com"
@@ -29,7 +29,7 @@ function Footer() {
                     chenpaulkevindev@gmail.com
                   </Link>
                 </h1>
-                <div className="relative flex justify-center items-center">
+                <div className="relative flex flex-wrap sm:flex justify-center items-center">
                   <Link
                     href="mailto:chenpaulkevindev@gmail.com.com"
                     target="_self"
