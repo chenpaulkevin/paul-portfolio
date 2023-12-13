@@ -23,17 +23,14 @@ function Footer() {
                 <h1 className="font-semibold text-lg sm:text-2xl md:text-3xl lg:text-5xl">
                   <Link
                     className="mail-to"
-                    href="mailto:chenpaulkevindev@gmail.com"
+                    href="mailto:paulchen@apexcodeph.com"
                     target="_self"
                   >
-                    chenpaulkevindev@gmail.com
+                    paulchen@apexcodeph.com
                   </Link>
                 </h1>
                 <div className="relative flex flex-wrap sm:flex justify-center items-center">
-                  <Link
-                    href="mailto:chenpaulkevindev@gmail.com.com"
-                    target="_self"
-                  >
+                  <Link href="mailto:paulchen@apexcodeph.com" target="_self">
                     <div className="md:h-10 md:w-10 lg:h-12 lg:w-12 rounded-full p-1 md:bg-secondary justify-center items-center md:text-primary flex text-2xl">
                       <ArrowUpRight
                         props={{
@@ -112,7 +109,7 @@ function Footer() {
               </Link>
             </div>
             <div>
-              <Link href="/">
+              <Link href="#main-header">
                 <div className="flex items-center justify-center gap-1">
                   <div> Back to Top</div>
                   <div className="h-6 w-6 flex justify-center items-center -rotate-45">

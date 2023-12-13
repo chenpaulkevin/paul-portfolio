@@ -39,7 +39,7 @@ export const FooterLinks = [
     },
     {
         title: "Mail",
-        href: "mailto:chenpaulkevindev@gmail.com",
+        href: "mailto:paulchen@apexcodeph.com",
         target:"_self"
     },
 ]

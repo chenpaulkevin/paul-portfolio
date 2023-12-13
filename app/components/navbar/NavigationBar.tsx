@@ -38,7 +38,10 @@ function NavigationBar() {
   const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <nav className="container mx-auto h-28 flex content-center">
+      <nav
+        className="container mx-auto h-28 flex content-center"
+        id="main-header"
+      >
         <div className="flex w-full justify-between items-center">
           <div>
             <Link href="/">
