@@ -7,6 +7,9 @@ body {
 .svg-goo {
   display: none;
 }
+.test-github-commit{
+  font-size: 10px;
+}
 .gradients-container {
   filter: url(#goo) blur(40px);
   width: 100%;
