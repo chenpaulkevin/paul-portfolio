@@ -207,9 +207,9 @@ const WorkItem = ({
         alt={`${title} Background Image`}
         src={src}
         placeholder="blur"
-        quality={100}
+        quality={80}
         fill
-        sizes="100vw"
+        sizes="80vw"
         style={{ objectFit: "cover" }}
       />
     </div>

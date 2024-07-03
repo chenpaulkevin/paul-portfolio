@@ -95,7 +95,7 @@ function BrandGrid() {
             ></Link>
             <Image
               src={ApexCode}
-              quality={100}
+              quality={80}
               fill
               alt="Apex Code Brand Identity"
               sizes="(min-width: 1540px) 760px, (min-width: 1280px) 552px, (min-width: 1040px) 440px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
@@ -127,7 +127,7 @@ function BrandGrid() {
             ></Link>
             <Image
               src={Zenyama}
-              quality={100}
+              quality={80}
               fill
               alt="Zenyama Brand Identity"
               sizes="(min-width: 1540px) 372px, (min-width: 1280px) 268px, (min-width: 1040px) 212px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
@@ -157,7 +157,7 @@ function BrandGrid() {
             ></Link>
             <Image
               src={AddIn}
-              quality={100}
+              quality={80}
               fill
               alt="Add In Brand Identity"
               sizes="(min-width: 1540px) 372px, (min-width: 1280px) 268px, (min-width: 1040px) 212px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
@@ -189,7 +189,7 @@ function BrandGrid() {
             ></Link>
             <Image
               src={Raijin}
-              quality={100}
+              quality={80}
               fill
               alt="Raijin Brand Identity"
               sizes="(min-width: 1540px) 760px, (min-width: 1280px) 552px, (min-width: 1040px) 440px, (min-width: 780px) 704px, (min-width: 640px) 576px, calc(100vw - 32px)"
@@ -216,7 +216,7 @@ function BrandGrid() {
             <div className="h-12 w-16 lg:h-16 lg:w-20 lg:-mt-5 relative">
               <Image
                 src={MarkDark}
-                quality={100}
+                quality={80}
                 fill
                 style={{ objectFit: "contain" }}
                 sizes="(min-width: 1040px) 80px, 64px"

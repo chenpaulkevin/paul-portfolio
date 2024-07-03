@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import NavigationBar from "./components/navbar/NavigationBar";
 import Header from "./components/homepage/header/Header";
 
-//const Camera = dynamic(() => import("./components/homepage/three-d/Camera"));
+const Camera = dynamic(() => import("./components/homepage/three-d/Camera"));
 const Footer = dynamic(() => import("./components/homepage/footer/Footer"), {
   ssr: false,
 });
@@ -24,7 +24,7 @@ const Home: React.FC = () => (
     <Header />
     <PreviousWorks />
     <BrandGrid />
-    {/* <Camera />*/}
+    <Camera />
     <Door />
     <Footer />
   </main>
