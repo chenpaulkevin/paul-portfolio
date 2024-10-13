@@ -8,8 +8,8 @@ import dynamic from "next/dynamic";
 // Components:
 const ArrowUpRight = dynamic(() => import("../../ArrowUpRight"));
 import Fangster from "/public/fangster.jpg";
-import Philbio from "/public/philbio.jpg";
-import Pltrades from "/public/pltrades.jpg";
+import JRA from "/public/jra.jpg";
+import ApexCode from "/public/apex-code.jpg";
 
 const worksVariants = {
   initial: { scaleX: 0.96, borderRadius: "15% 15% 0% 0%" },
@@ -51,28 +51,28 @@ const textStyles =
 
 const images = [
   {
+    href: "https://www.jrahomebuilderscorp.com/",
+    src: JRA,
+    title: "JRA",
+    platform: "Content Management System",
+    description:
+      "JRA Home Builders Corporation is a Licensed Construction Company primarily engaged in Residential Design and Construction projects.",
+  },
+  {
+    href: "https://apexcodeph.vercel.app/",
+    src: ApexCode,
+    title: "Apexcode",
+    platform: "Web Agency",
+    description:
+      "Apexcode is a design and web developmentagency creating custom web solutions andelevating established brands.",
+  },
+  {
     href: "https://fangsterparts.com/",
     src: Fangster,
     title: "Fangster",
     platform: "E-Commerce Platform",
     description:
       "Fangster is an experienced manufacturer of motorcycle parts, as well as customized bikes. All products are designed in-house and manufactured rigorously in more than 15 steps.",
-  },
-  {
-    href: "https://www.philbio.org.ph/",
-    src: Philbio,
-    title: "Philbio",
-    platform: "Content Management System",
-    description:
-      "PhilBio was established for the specific purpose of furthering the biodiversity conservation activities of the 'Philippines Biodiversity Conservation Programme (PBCP)' initiated in the 1990's.",
-  },
-  {
-    href: "https://pltrades.com/",
-    src: Pltrades,
-    title: "Pltrades",
-    platform: "Stock Trading Social Media",
-    description:
-      "Pltrades provides graphs of a user's day to day trading activity from a given data and gives rooms for their notes, strategies and styles on how the user was able to achieve their results.",
   },
 ];
 

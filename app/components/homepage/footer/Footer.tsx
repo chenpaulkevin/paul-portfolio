@@ -23,10 +23,10 @@ function Footer() {
                 <h1 className="font-semibold text-lg sm:text-2xl md:text-3xl lg:text-5xl">
                   <Link
                     className="mail-to"
-                    href="mailto:paulchen@apexcodeph.com"
+                    href="mailto:chenpaulkevindev@gmail.com"
                     target="_self"
                   >
-                    paulchen@apexcodeph.com
+                    chenpaulkevindev@gmail.com
                   </Link>
                 </h1>
                 <div className="relative flex flex-wrap sm:flex justify-center items-center">
@@ -91,7 +91,7 @@ function Footer() {
             <div>
               {" "}
               <Link
-                href="https://drive.google.com/file/d/15abrN9Ae31BfoyYeXhdO8TvHpcKxTQC2/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1rItgPR9qkR3eZWpxAg_H3hMWeh1HaVZ3/view?usp=sharing"
                 target="_blank"
               >
                 <div className="flex items-center justify-center gap-1">
